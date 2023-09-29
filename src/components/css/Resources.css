@@ -1,0 +1,24 @@
+.chart-container {
+  margin-top: 20px;
+  height: 300px;
+}
+
+.resource-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dotted #444;
+  color: #e6e6e6;
+}
+
+.resource-item:last-child {
+  border-bottom: none;
+}
+
+.resource-item label {
+  font-weight: bold;
+}
+
+.resource-item span {
+  color: #ef8d49;
+}

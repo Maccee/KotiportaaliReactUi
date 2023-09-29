@@ -1,0 +1,51 @@
+body {
+  background-color: black;
+  background-image: url(./house.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -10rem;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 10px;
+}
+.componentBox {
+  background-color: #484848;
+  border: 1px solid #444;
+  color: #e6e6e6;
+  padding: 16px;
+  border-radius: 4px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  opacity: 0.9;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #444;
+  color: #e6e6e6;
+}
+
+/* You can add more styles for each individual component or any other customization you want */

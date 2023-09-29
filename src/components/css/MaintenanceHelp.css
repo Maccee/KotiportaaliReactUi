@@ -1,0 +1,42 @@
+.maintenance-help h2 {
+  margin: 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #444;
+  color: #e6e6e6;
+}
+
+.maintenance-help p {
+  color: #e6e6e6;
+  margin: 16px 0;
+}
+
+.maintenance-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.maintenance-form textarea {
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: #1f1f1f;
+  color: #e6e6e6;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.maintenance-form button {
+  align-self: flex-end;
+  background-color: #ef8d49;
+  color: #e6e6e6;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.maintenance-form button:hover {
+  background-color: #d5752b;
+}

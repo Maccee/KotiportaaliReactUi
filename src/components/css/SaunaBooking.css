@@ -1,0 +1,43 @@
+.calendar-view {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.hour-block {
+  width: 40px; /* Adjust width as per your design preference */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ef8d49;
+  color: #e6e6e6;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  border: 1px solid #444;
+  cursor: pointer;
+}
+
+.hour-block.booked {
+  background-color: #444;
+}
+
+.hour-block.available:hover {
+  background-color: #d67a3d;
+}
+
+.booking-btn {
+  background-color: #ef8d49;
+  color: #e6e6e6;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.booking-btn:hover {
+  background-color: #d67a3d;
+}
