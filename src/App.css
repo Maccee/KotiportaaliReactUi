@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  background-image: url(./house.png);
+  background-image: url(./assets/house.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center -10rem;
@@ -47,5 +47,3 @@ h2 {
   border-bottom: 1px solid #444;
   color: #e6e6e6;
 }
-
-/* You can add more styles for each individual component or any other customization you want */
