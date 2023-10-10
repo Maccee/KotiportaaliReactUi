@@ -1,16 +1,5 @@
-.files-container {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
+
+
   .file-item {
     display: flex;
     flex-direction: column;

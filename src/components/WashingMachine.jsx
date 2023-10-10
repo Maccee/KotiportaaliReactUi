@@ -35,8 +35,11 @@ function WashingMachine() {
 
   return (
     <div className="componentBox">
+      
       <h2>Pesukoneen varaus</h2>
+      Valitse Päivä
       <div className="calendar-days">
+        
         {daysInMonth.map((day) => (
           <div
             key={day}
@@ -49,6 +52,7 @@ function WashingMachine() {
       </div>
       <hr />
       {showHours && (
+        
         <div className="hour-selection">
           {hours.map((hour) => (
             <div

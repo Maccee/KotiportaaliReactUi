@@ -5,7 +5,7 @@ function Files() {
   return (
     <>
       <div className="files-container componentBox">
-        <h2>Kotitalousyrityksen Resurssit</h2>  {/* "Household Company Resources" translation */}
+        <h2>Kotitalousyrityksen tiedostot</h2>  {/* "Household Company Resources" translation */}
 
         <div className="file-item">
           <h3>Isännöintitodistus</h3>

@@ -9,9 +9,13 @@ import Resources from "./components/Resources";
 import MaintenanceHelp from "./components/MaintenanceHelp";
 import Announcements from "./components/Announcements";
 import Files from "./components/Files";
+import Header from "./components/Header";
+
 
 function App() {
   return (
+    <>
+    <Header/>
     <div className="app-container">
       <div className="column">
         <Announcements />
@@ -20,15 +24,17 @@ function App() {
         <WashingMachine />
         <SaunaBookings />
         <MaintenanceHelp />
-        <MessageBoard />
+        
       </div>
       <div className="column">
         <Files />
       </div>
       <div className="column">
         <Resources />
+        <MessageBoard />
       </div>
     </div>
+    </>
   );
 }
 

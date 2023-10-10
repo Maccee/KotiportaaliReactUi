@@ -1,0 +1,15 @@
+.message-board-header {
+    position: fixed;      /* Makes the header fixed at the top */
+    top: 0;               /* Positions it at the very top */
+    left: 0;              /* Stretches from the left edge */
+    width: 100%;          /* Ensures it spans the entire viewport width */
+    background-color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    z-index: 1000;        /* Keeps the header above other elements */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 3rem;
+}
