@@ -7,8 +7,8 @@
   display: flex;
   justify-content: space-between;
   padding: 8px 0;
-  border-bottom: 1px dotted #444;
-  color: #e6e6e6;
+  border-bottom: 1px dotted #000000;
+  color: #000000;
 }
 
 .resource-item:last-child {
@@ -20,5 +20,5 @@
 }
 
 .resource-item span {
-  color: #ef8d49;
+  color: #000000;
 }

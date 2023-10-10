@@ -6,17 +6,17 @@
 
 .announcement-list li {
   margin-block-end: 1.5rem;
-  border-bottom: 1px solid #444;
+  
   transition: background-color 0.3s;
-  color: #e6e6e6;
+  color: #000000;
 }
 
 .announcement-list li:hover {
-  background-color: #333;
+  background-color: #d6d6d6;
 }
 
 .announcement-header {
-  color: #ef8d49;
+  color: #000000;
   margin: 0;
   font-size: 1.5rem;
   font-weight: 400;
@@ -25,35 +25,10 @@
 .announcement-actions {
   margin-top: 10px;
 }
-
-.edit-btn,
-.delete-btn {
-  padding: 6px 12px;
-  border: none;
-  border-radius: 4px;
-  font-weight: 300;
-  margin-right: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s;
+.announcement-actions button {
+  margin-inline-end: 1rem;
 }
 
-.edit-btn {
-  background-color: #ef8d49;
-  color: #1f1f1f;
-}
-
-.edit-btn:hover {
-  background-color: #d5752b;
-}
-
-.delete-btn {
-  background-color: #d43f00;
-  color: #e6e6e6;
-}
-
-.delete-btn:hover {
-  background-color: #b23300;
-}
 .announcement-list li p:nth-child(2) {
   font-size: 0.8rem;
 }

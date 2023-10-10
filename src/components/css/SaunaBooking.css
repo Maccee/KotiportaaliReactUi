@@ -27,17 +27,3 @@
   background-color: #d67a3d;
 }
 
-.booking-btn {
-  background-color: #ef8d49;
-  color: #e6e6e6;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 300;
-  padding: 8px 16px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.booking-btn:hover {
-  background-color: #d67a3d;
-}

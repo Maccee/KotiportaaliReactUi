@@ -10,15 +10,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #444;
+  background-color: #b0b0b0;
   color: #e6e6e6;
   font-family: "Quicksand", sans-serif;
   font-weight: 300;
-  border: 1px solid #444;
+  border: 1px solid #000000;
   cursor: pointer;
 }
 
 .hour-block.booked {
-  background-color: #444;
-  background-color: #ef8d49;
+  background-color: #000000;
+  background-color: #000000;
 }
