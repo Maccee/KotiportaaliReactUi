@@ -47,6 +47,12 @@ h2 {
   
   color: #000000;
 }
+h3 {
+  color: #000000;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 button {
   background-color: #dec5ff;
   color: #000000;

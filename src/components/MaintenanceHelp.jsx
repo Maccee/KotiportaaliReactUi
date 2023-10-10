@@ -1,18 +1,27 @@
-// components/MaintenanceHelp.js
 import React from "react";
 import "./css/MaintenanceHelp.css";
 
 function MaintenanceHelp() {
   return (
     <div className="componentBox">
-      <h2>Maintenance Help</h2>
+      <h2>Huoltoapu</h2>
       <p>
-        If you have any maintenance requests or issues, please fill out the form
-        below:
+        Jos sinulla on huoltopyyntöjä tai ongelmia, täytä alla oleva lomake:
       </p>
       <form className="maintenance-form">
-        <textarea placeholder="Describe your maintenance issue..." />
-        <button type="submit">Submit</button>
+        <label htmlFor="name">Nimi:</label>
+        <input type="text" id="name" placeholder="Anna nimesi" />
+
+        <label htmlFor="apartment-number">Asunnon numero:</label>
+        <input type="text" id="apartment-number" placeholder="Anna asunnon numero" />
+
+        <label htmlFor="contact-info">Yhteystiedot:</label>
+        <input type="text" id="contact-info" placeholder="Puhelinnumero tai sähköposti" />
+
+        <label htmlFor="description">Kuvaus ongelmasta:</label>
+        <textarea id="description" placeholder="Kuvaile huoltokysymystäsi tai ongelmaa..." />
+
+        <button type="submit">Lähetä</button>
       </form>
     </div>
   );

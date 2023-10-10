@@ -8,6 +8,7 @@ import WashingMachine from "./components/WashingMachine";
 import Resources from "./components/Resources";
 import MaintenanceHelp from "./components/MaintenanceHelp";
 import Announcements from "./components/Announcements";
+import Files from "./components/Files";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         <SaunaBookings />
         <MaintenanceHelp />
         <MessageBoard />
+      </div>
+      <div className="column">
+        <Files />
       </div>
       <div className="column">
         <Resources />

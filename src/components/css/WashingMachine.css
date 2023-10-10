@@ -1,24 +1,38 @@
-.calendar-view {
+
+
+.calendar-days,
+.hour-selection {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 10px;
+  justify-content: center;
 }
 
+.day-block,
 .hour-block {
-  width: 40px; /* Adjust width as per your design preference */
+  width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #b0b0b0;
-  color: #e6e6e6;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 300;
-  border: 1px solid #000000;
   cursor: pointer;
 }
 
+.day-block:hover,
+.hour-block:hover {
+  background-color: #9f89ff;
+}
+
+.day-block.selected,
 .hour-block.booked {
-  background-color: #000000;
-  background-color: #000000;
+  background-color: #9f89ff;
+  cursor: not-allowed;
+}
+
+.hour-block {
+  background-color: #dec5ff;
+}
+
+.hour-selection {
+  position: relative;
 }

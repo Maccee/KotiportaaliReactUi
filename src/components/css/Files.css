@@ -1,0 +1,26 @@
+.files-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .file-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .file-item button  {
+    margin-top: 1rem;
+  }
+  
+  
