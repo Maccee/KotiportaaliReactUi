@@ -1,5 +1,9 @@
 
-
+.chart-container {
+  width: 100%;
+  overflow: hidden;
+  min-width: 220px;
+}
 .resource-item {
   display: flex;
   justify-content: space-between;

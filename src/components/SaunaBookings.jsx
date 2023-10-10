@@ -83,11 +83,14 @@ function SaunaBookings() {
               </div>
             );
           })}
-          {selectedHour && (
-            <button onClick={bookSlot} className="varaa-button">
-              Varaa
-            </button>
-          )}
+          
+        </div>
+      )}
+      {selectedHour && (
+        <div className="centered-button">
+          <button onClick={bookSlot} className="varaa-button">
+            Varaa
+          </button>
         </div>
       )}
     </div>

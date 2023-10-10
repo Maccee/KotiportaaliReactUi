@@ -16,20 +16,19 @@ function App() {
     <>
       <Header />
       <div className="app-container">
-        <div className="column">
-          <Resources />
-          <MaintenanceHelp />
-          <Files />
+        <div className="column1">
+          <Announcements />
+          
         </div>
         <div className="centerColumn">
-          <Announcements />
+          <Resources />
+          <MaintenanceHelp />
           <MessageBoard />
           
         </div>
-        <div className="column">
+        <div className="column3">
           <WashingMachine />
           <SaunaBookings />
-          <MaintenanceHelp />
           <Files />
         </div>
       </div>

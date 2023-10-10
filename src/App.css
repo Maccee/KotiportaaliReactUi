@@ -3,7 +3,7 @@ body {
   background-image: url(./assets/house.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  
 }
 body::before {
   content: "";
@@ -24,18 +24,22 @@ body::before {
   margin-top: 5rem;
 }
 
-.column {
-  flex-basis: 20%;
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-}
-
+.column1,
+.column3,
 .centerColumn {
   display: flex;
   flex-direction: column;
-  flex-basis: 60%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
   gap: 1rem;
+}
+
+.column1 {
+  flex-basis: 40%;
+}
+.column3 {
+  flex-basis: 30%;
 }
 
 .componentBox {
@@ -45,7 +49,23 @@ body::before {
   padding: 1rem;
   border-radius: 4px;
   font-family: "Quicksand", sans-serif;
-  
+}
+
+/* Media query for screen widths under 600px */
+@media (max-width: 600px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .column1,
+  .column3 .centerColumn {
+    flex-basis: 100%;
+    
+  }
+
+  .componentBox {
+    min-width: auto; /* Override the fixed min-width */
+  }
 }
 
 h2 {
