@@ -11,29 +11,28 @@ import Announcements from "./components/Announcements";
 import Files from "./components/Files";
 import Header from "./components/Header";
 
-
 function App() {
   return (
     <>
-    <Header/>
-    <div className="app-container">
-      <div className="column">
-        <Announcements />
+      <Header />
+      <div className="app-container">
+        <div className="column">
+          <Resources />
+          <MaintenanceHelp />
+          <Files />
+        </div>
+        <div className="centerColumn">
+          <Announcements />
+          <MessageBoard />
+          
+        </div>
+        <div className="column">
+          <WashingMachine />
+          <SaunaBookings />
+          <MaintenanceHelp />
+          <Files />
+        </div>
       </div>
-      <div className="column">
-        <WashingMachine />
-        <SaunaBookings />
-        <MaintenanceHelp />
-        
-      </div>
-      <div className="column">
-        <Files />
-      </div>
-      <div className="column">
-        <Resources />
-        <MessageBoard />
-      </div>
-    </div>
     </>
   );
 }

@@ -3,7 +3,7 @@ body {
   background-image: url(./assets/house.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center -10rem;
+  background-position: center;
 }
 body::before {
   content: "";
@@ -18,27 +18,36 @@ body::before {
 
 .app-container {
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
+  margin: 1rem;
   margin-top: 5rem;
 }
 
 .column {
-  flex: 1;
+  flex-basis: 20%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.centerColumn {
   display: flex;
   flex-direction: column;
+  flex-basis: 60%;
   gap: 1rem;
-  padding: 0 10px;
 }
+
 .componentBox {
+  min-width: 220px;
   background-color: #fdfdfd;
- 
   color: #000000;
-  padding: 16px;
+  padding: 1rem;
   border-radius: 4px;
   font-family: "Quicksand", sans-serif;
-  font-weight: 300;
-  opacity: 1;
+  
 }
+
 h2 {
   font-size: 2rem;
   font-weight: 400;
