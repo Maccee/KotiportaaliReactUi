@@ -38,6 +38,9 @@ body::before {
 .column1 {
   flex-basis: 40%;
 }
+.centerColumn {
+  flex-basis: 30%;
+}
 .column3 {
   flex-basis: 30%;
 }
@@ -52,7 +55,7 @@ body::before {
 }
 
 /* Media query for screen widths under 600px */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .app-container {
     flex-direction: column;
   }
