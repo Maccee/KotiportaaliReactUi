@@ -4,92 +4,83 @@ import "./css/Announcements.css";
 function Announcements() {
   return (
     <div className="componentBox announcements">
-      <h2>Announcements</h2>
+      <h2>Ilmoitukset</h2>
       <ul className="announcement-list">
         <li>
-          <h3 className="announcement-header">Holy Grail Found!</h3>
-          <p>Date: October 2, 2023 | Time: 11:00 AM | Author: Sir Lancelot</p>
+          <h3 className="announcement-header">Pyhä Graali Löydetty!</h3>
+          <p>Päivämäärä: 2. lokakuuta 2023 | Aika: 11:00 | Kirjoittaja: Sir Lancelot</p>
           <p>
-            Details: The Holy Grail has been found in the community garden! Join
-            us for a celebratory quest at noon.
+            Yksityiskohdat: Pyhä Graali on löydetty yhteisön puutarhasta! Liity meihin juhlalliselle etsintäretkelle keskipäivällä.
           </p>
           <div className="announcement-actions">
-            <button className="edit-btn">Edit</button>
-            <button className="delete-btn">Delete</button>
+            <button className="edit-btn">Muokkaa</button>
+            <button className="delete-btn">Poista</button>
           </div>
         </li>
         <li>
-          <h3 className="announcement-header">Rabbit Alert!</h3>
-          <p>Date: October 3, 2023 | Time: 1:00 PM | Author: Sir Robin</p>
+          <h3 className="announcement-header">Jänishälytys!</h3>
+          <p>Päivämäärä: 3. lokakuuta 2023 | Aika: 1:00 PM | Kirjoittaja: Sir Robin</p>
           <p>
-            Details: Beware of the rabbit near the gym entrance. It's not as
-            innocent as it looks. Approach with caution!
+            Yksityiskohdat: Varo jänistä kuntosalin sisäänkäynnin lähellä. Se ei ole niin viaton kuin miltä se näyttää. Lähesty varoen!
           </p>
           <div className="announcement-actions">
-            <button className="edit-btn">Edit</button>
-            <button className="delete-btn">Delete</button>
+            <button className="edit-btn">Muokkaa</button>
+            <button className="delete-btn">Poista</button>
           </div>
         </li>
         <li>
-          <h3 className="announcement-header">Spam Breakfast Tomorrow</h3>
-          <p>Date: October 4, 2023 | Time: 6:30 AM | Author: Viking</p>
+          <h3 className="announcement-header">Spam-aamiainen Huomenna</h3>
+          <p>Päivämäärä: 4. lokakuuta 2023 | Aika: 6:30 AM | Kirjoittaja: Viikinki</p>
           <p>
-            Details: Join us for a SPAM, SPAM, SPAM, and eggs breakfast in the
-            dining hall!
+            Yksityiskohdat: Liity meihin SPAM, SPAM, SPAM ja munien aamiaiselle ruokasalissa!
           </p>
           <div className="announcement-actions">
-            <button className="edit-btn">Edit</button>
-            <button className="delete-btn">Delete</button>
+            <button className="edit-btn">Muokkaa</button>
+            <button className="delete-btn">Poista</button>
           </div>
         </li>
         <li>
-          <h3 className="announcement-header">Argument Clinic Open House</h3>
-          <p>Date: October 5, 2023 | Time: 3:00 PM | Author: Mr. Barnard</p>
+          <h3 className="announcement-header">Väittelyn Klinikka Avoinna</h3>
+          <p>Päivämäärä: 5. lokakuuta 2023 | Aika: 3:00 PM | Kirjoittaja: Mr. Barnard</p>
           <p>
-            Details: If you've paid for a five-minute argument or a full
-            half-hour, join us at the argument clinic's open house!
+            Yksityiskohdat: Jos olet maksanut viiden minuutin väittelystä tai täydestä puolituntisesta, liity meihin väittelyn klinikan avoimessa talossa!
           </p>
           <div className="announcement-actions">
-            <button className="edit-btn">Edit</button>
-            <button className="delete-btn">Delete</button>
+            <button className="edit-btn">Muokkaa</button>
+            <button className="delete-btn">Poista</button>
           </div>
         </li>
         <li>
-          <h3 className="announcement-header">Lumberjack Song Sing-Along</h3>
-          <p>Date: October 6, 2023 | Time: 7:00 PM | Author: Jack</p>
+          <h3 className="announcement-header">Lumberjack Laulun Yhteislaulu</h3>
+          <p>Päivämäärä: 6. lokakuuta 2023 | Aika: 7:00 PM | Kirjoittaja: Jack</p>
           <p>
-            Details: Join our community sing-along, and proudly proclaim that
-            you're a lumberjack!
+            Yksityiskohdat: Liity yhteisölauluun ja julista ylpeänä olevasi lumberjack!
           </p>
           <div className="announcement-actions">
-            <button className="edit-btn">Edit</button>
-            <button className="delete-btn">Delete</button>
+            <button className="edit-btn">Muokkaa</button>
+            <button className="delete-btn">Poista</button>
           </div>
         </li>
         <li>
-          <h3 className="announcement-header">
-            Dead Parrot Sketch Reenactment
-          </h3>
-          <p>Date: October 7, 2023 | Time: 2:00 PM | Author: Mr. Praline</p>
+          <h3 className="announcement-header">Kuolleen Papukaijan Sketch Uudelleennäytös</h3>
+          <p>Päivämäärä: 7. lokakuuta 2023 | Aika: 2:00 PM | Kirjoittaja: Mr. Praline</p>
           <p>
-            Details: A reenactment of the classic dead parrot sketch. Be sure to
-            join for a laugh and some nostalgia.
+            Yksityiskohdat: Kuolleen papukaijan sketsin uudelleennäytös. Tule mukaan nauramaan ja muistelemaan vanhoja aikoja.
           </p>
           <div className="announcement-actions">
-            <button className="edit-btn">Edit</button>
-            <button className="delete-btn">Delete</button>
+            <button className="edit-btn">Muokkaa</button>
+            <button className="delete-btn">Poista</button>
           </div>
         </li>
         <li>
-          <h3 className="announcement-header">Bridge of Death Trivia Night</h3>
-          <p>Date: October 8, 2023 | Time: 8:00 PM | Author: Old Man</p>
+          <h3 className="announcement-header">Kuoleman Silta Trivia-ilta</h3>
+          <p>Päivämäärä: 8. lokakuuta 2023 | Aika: 8:00 PM | Kirjoittaja: Vanha Mies</p>
           <p>
-            Details: Answer the questions three and win exciting prizes! Just
-            remember to know your favorite color.
+            Yksityiskohdat: Vastaa kolmeen kysymykseen ja voita jännittäviä palkintoja! Muista tietää suosikkivärisi.
           </p>
           <div className="announcement-actions">
-            <button className="edit-btn">Edit</button>
-            <button className="delete-btn">Delete</button>
+            <button className="edit-btn">Muokkaa</button>
+            <button className="delete-btn">Poista</button>
           </div>
         </li>
       </ul>

@@ -38,7 +38,7 @@ function Resources() {
         labels: labels,
         datasets: [
           {
-            label: "Electricity Price ($/kWh)",
+            label: "Sähkön hinta €/kWh)",
             data: Array.from({ length: 30 }, () =>
               (Math.random() * 0.05 + 0.1).toFixed(2)
             ),
@@ -46,7 +46,7 @@ function Resources() {
             fill: false,
           },
           {
-            label: "kWh Used",
+            label: "kWh käytetty",
             data: Array.from({ length: 30 }, () =>
               Math.floor(Math.random() * 2000 + 1000)
             ),
@@ -59,7 +59,7 @@ function Resources() {
         labels: labels,
         datasets: [
           {
-            label: "Water Used (Liters)",
+            label: "Vettä käytetty (Litraa)",
             data: Array.from({ length: 30 }, () =>
               Math.floor(Math.random() * 10000 + 2000)
             ),
@@ -83,27 +83,27 @@ function Resources() {
 
   return (
     <div className="componentBox">
-      <h2>Resources</h2>
+      <h2>Resurssit</h2>
       <div className="resource-item">
-        <label>Electric Price:</label>
-        <span>${electricPrice}/kWh</span>
+        <label>Sähkön hinta:</label>
+        <span>{electricPrice}snt/kWh</span>
       </div>
       <div className="resource-item">
-        <label>Current Time:</label>
+        <label>Aika:</label>
         <span>{date.toLocaleTimeString()}</span>
       </div>
       <div className="resource-item">
-        <label>Date:</label>
+        <label>Pvm:</label>
         <span>{date.toLocaleDateString()}</span>
       </div>
 
       <div className="chart-container">
-        <h3>Electricity Usage & Prices</h3>
+        <h3>Sähkön käyttö ja hinta</h3>
         <Line data={electricData} />
       </div>
 
       <div className="chart-container">
-        <h3>Water Usage</h3>
+        <h3>Veden käyttö</h3>
         <Line data={waterData} />
       </div>
     </div>
