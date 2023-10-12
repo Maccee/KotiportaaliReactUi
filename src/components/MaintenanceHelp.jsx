@@ -84,7 +84,19 @@ function MaintenanceHelp() {
           <strong>Lähetetyt huoltopyynnöt:</strong>
           <br />
           {submittedData.map((data, index) => (
-            <a key={index} href="#!" className="maintenance-request-link">
+            <a
+              key={index}
+              href="#!"
+              className="maintenance-request-link"
+              onClick={() => {
+                alert(
+                  `Nimi: ${data.name}\n` +
+                    `Asunnon numero: ${data.apartmentNumber}\n` +
+                    `Yhteystiedot: ${data.contactInfo}\n` +
+                    `Kuvaus ongelmasta: ${data.description}`
+                );
+              }}
+            >
               {data.description.length > 30
                 ? `${data.description.substring(0, 30)}...`
                 : data.description}

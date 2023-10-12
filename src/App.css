@@ -74,7 +74,7 @@ body::before {
 h2 {
   font-size: 2rem;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   margin-bottom: 1rem;
   color: #000000;
 }
@@ -84,6 +84,7 @@ h3 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 400;
+  
 }
 button {
   background-color: #dec5ff;

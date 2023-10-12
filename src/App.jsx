@@ -18,6 +18,7 @@ function App() {
       <div className="app-container">
         <div className="column1">
           <Announcements />
+          <Files />
           
         </div>
         <div className="centerColumn">
@@ -29,7 +30,7 @@ function App() {
         <div className="column3">
           <WashingMachine />
           <SaunaBookings />
-          <Files />
+          
         </div>
       </div>
     </>

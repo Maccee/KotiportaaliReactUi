@@ -32,8 +32,7 @@ function SaunaBookings() {
       ...prevBookings,
       {
         hour: selectedHour,
-        day: selectedDay,  // Save the selected day with the booking
-        
+        day: selectedDay, // Save the selected day with the booking
       },
     ]);
     setSelectedHour(null);
@@ -60,10 +59,9 @@ function SaunaBookings() {
           </div>
         ))}
       </div>
-      
       {showHours && (
         <div>
-          <hr/>
+          <hr />
           <div className="hour-selection">
             {hours.map((hour) => {
               const booking = bookings.find((b) => b.hour === hour);
@@ -78,11 +76,10 @@ function SaunaBookings() {
                       : "hour-block"
                   }
                   onClick={() => handleHourClick(hour)}
-                  title={
-                    booking
-                      ? `Varattu: ${booking.name} ${booking.surname} Asunto ${booking.houseNumber}`
-                      : "Vapaa"
-                  }
+                  title={`${hour}:00 - ${hour + 1}:00 ${
+                    booking ? " - Varaus" : " - Vapaa"
+                  }`}
+
                 >
                   {hour}:00
                 </div>

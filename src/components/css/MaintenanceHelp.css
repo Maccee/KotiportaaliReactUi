@@ -1,23 +1,12 @@
-.maintenance-help h2 {
-  margin: 0;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #444;
-  color: #e6e6e6;
-}
-
 .maintenance-help p {
-  color: #e6e6e6;
-  margin: 16px 0;
+  margin-bottom: 1rem;
 }
-
 .maintenance-form {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-
 .maintenance-form textarea {
-  margin-top: 1rem;
   padding: 12px;
   border-radius: 4px;
   border: 1px solid #000000;
@@ -26,9 +15,6 @@
   resize: vertical;
   min-height: 100px;
 }
-
 .maintenance-form button {
   align-self: flex-end;
-
-
 }
