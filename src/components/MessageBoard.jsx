@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./css/MessageBoard.css";
 
 function MessageBoard() {
-  // State for all messages and current input message
   const [messages, setMessages] = useState([
     "Hei vaan!",
     "Varokaa koiraa!",
@@ -10,13 +9,12 @@ function MessageBoard() {
   ]);
   const [currentMessage, setCurrentMessage] = useState("");
 
-  // Event handler for the form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add the current message to the beginning of the messages array
-    setMessages([currentMessage, ...messages]);
-    // Clear the input field
-    setCurrentMessage("");
+    if (currentMessage.trim()) {
+      setMessages([currentMessage, ...messages]);
+      setCurrentMessage("");
+    }
   };
 
   return (

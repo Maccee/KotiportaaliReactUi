@@ -1,15 +1,16 @@
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* This will ensure everything is aligned vertically in the middle */
+  padding: 10px 0;     /* Add some vertical padding for space */
+}
+
+.file-item button {
+  width: auto;
+  margin-left: 20px; /* Add some space to the left of the button */
+}
 
 
-  .file-item {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
-  .file-item button  {
-    margin-top: 1rem;
-  }
-  
-  
+.file-description {
+  flex: 1; /* This will ensure the content takes up the maximum available space */
+}

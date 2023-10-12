@@ -22,8 +22,15 @@
   font-weight: 400;
 }
 
+.announcement-list > li {
+  display: flex;
+  flex-direction: column;
+}
+
 .announcement-actions {
   margin-top: 10px;
+  align-self: flex-end;  /* This will push the .announcement-actions to the right */
+  display: flex; /* This ensures the buttons inside also line up horizontally */
 }
 .announcement-actions button {
   margin-inline-end: 1rem;

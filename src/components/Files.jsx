@@ -5,40 +5,51 @@ function Files() {
   return (
     <>
       <div className="files-container componentBox">
-        <h2>Kotitalousyrityksen tiedostot</h2>  {/* "Household Company Resources" translation */}
-
+        <h2>Kotitalousyrityksen tiedostot</h2>
+  
         <div className="file-item">
-          <h3>Isännöintitodistus</h3>
-          <p>Kuvaus: Virallinen todistus rakennuksen hallinnosta.</p>  {/* "Description: Official certificate from the building's management." translation */}
-          <button>Lataa</button>  {/* "Download" translation */}
-        </div>
-
-        <div className="file-item">
-          <h3>Huoltopäiväkirja</h3>
-          <p>Kuvaus: Rakennuksen huoltoloki.</p>  {/* "Description: Maintenance logbook of the building." translation */}
+          <div className="file-description">
+            <h3>Isännöintitodistus</h3>
+            <p>Kuvaus: Virallinen todistus rakennuksen hallinnosta.</p>
+          </div>
           <button>Lataa</button>
         </div>
-
+  
         <div className="file-item">
-          <h3>Taloyhtiökokousten pöytäkirja</h3>
-          <p>Kuvaus: Pöytäkirja taloyhtiön kokouksista.</p>  {/* "Description: Meeting minutes from the housing company's meetings." translation */}
+          <div className="file-description">
+            <h3>Huoltopäiväkirja</h3>
+            <p>Kuvaus: Rakennuksen huoltoloki.</p>
+          </div>
           <button>Lataa</button>
         </div>
-
+  
         <div className="file-item">
-          <h3>Kiinteistön vakuutustiedot</h3>
-          <p>Kuvaus: Kiinteistön vakuutustiedot.</p>  {/* "Description: Property insurance information." translation */}
+          <div className="file-description">
+            <h3>Taloyhtiökokousten pöytäkirja</h3>
+            <p>Kuvaus: Pöytäkirja taloyhtiön kokouksista.</p>
+          </div>
           <button>Lataa</button>
         </div>
-
+  
         <div className="file-item">
-          <h3>Taloudellinen suunnitelma</h3>
-          <p>Kuvaus: Kotitalousyrityksen taloudellinen suunnitelma.</p>  {/* "Description: Financial plan of the household company." translation */}
+          <div className="file-description">
+            <h3>Kiinteistön vakuutustiedot</h3>
+            <p>Kuvaus: Kiinteistön vakuutustiedot.</p>
+          </div>
+          <button>Lataa</button>
+        </div>
+  
+        <div className="file-item">
+          <div className="file-description">
+            <h3>Taloudellinen suunnitelma</h3>
+            <p>Kuvaus: Kotitalousyrityksen taloudellinen suunnitelma.</p>
+          </div>
           <button>Lataa</button>
         </div>
       </div>
     </>
   );
+  
 }
 
 export default Files;
