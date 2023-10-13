@@ -22,7 +22,11 @@ function SaunaBookings() {
   };
 
   const handleHourClick = (hour) => {
-    if (!bookings.some((booking) => booking.hour === hour)) {
+    if (
+      !bookings.some(
+        (booking) => booking.hour === hour && booking.day === selectedDay
+      )
+    ) {
       setSelectedHour(hour);
     }
   };
@@ -38,9 +42,11 @@ function SaunaBookings() {
     setSelectedHour(null);
   };
 
-  const deleteBooking = (hour) => {
+  const deleteBooking = (hour, day) => {
     setBookings((prevBookings) =>
-      prevBookings.filter((booking) => booking.hour !== hour)
+      prevBookings.filter(
+        (booking) => booking.hour !== hour || booking.day !== day
+      )
     );
   };
 
@@ -64,7 +70,9 @@ function SaunaBookings() {
           <hr />
           <div className="hour-selection">
             {hours.map((hour) => {
-              const booking = bookings.find((b) => b.hour === hour);
+              const booking = bookings.find(
+                (b) => b.hour === hour && b.day === selectedDay
+              );
               return (
                 <div
                   key={hour}
@@ -79,7 +87,6 @@ function SaunaBookings() {
                   title={`${hour}:00 - ${hour + 1}:00 ${
                     booking ? " - Varaus" : " - Vapaa"
                   }`}
-
                 >
                   {hour}:00
                 </div>
@@ -109,7 +116,7 @@ function SaunaBookings() {
                 Päivä: {booking.day}, Klo: {booking.hour}:00
                 <button
                   className="delete-booking-btn"
-                  onClick={() => deleteBooking(booking.hour)}
+                  onClick={() => deleteBooking(booking.hour, booking.day)}
                 >
                   Peru varaus
                 </button>
